@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        body{
+           
+            
+        }
+        div{
+/*            border: red 2px solid;*/
+            animation: bg 5s forwards;
+            background: rgba(0,0,0,1);  
+        }
+        img{
+            background: transparent;
+/*            opacity: 0;*/
+animation: smash 5s forwards ;
+            animation-timing-function: ease-in-out;
+            transition: 5s;
+/*            transition:opacity 2500ms;*/
+          
+    }
+        
+        @keyframes bg{
+            
+            99.9%{
+                background: rgba(0,0,0,1);
+            }
+            
+            100%{
+                background:  rgba(0,0,0,0);
+            }
+            
+        }
+        
+        @keyframes smash{
+            from{
+                
+            }
+            
+            to{
+/*                display: none;*/
+                transition: 5s;
+/*                opacity: 0;*/
+                visibility: hidden;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+    <img src="asset/images/smash1.gif" loop=False />
+    </div>
+    
+</body>
+</html>

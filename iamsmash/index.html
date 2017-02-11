@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I AM SMASH</title>
+    <link rel="icon" href="asset/images/smash.png">
+    <link rel="stylesheet" href="asset/stylesheet/main.css">
+</head>
+<body>
+   
+   <div id="container">
+       
+       <header id="header" >
+           
+           <div class="container">
+               
+               <div class="primary-nav box">
+                   
+                   <div class="logo box">
+                       <img src="asset/images/smash.png" alt="logo">
+                   </div>
+                   
+                   <div class="links box">
+                       <ul>
+                           <li><a href="#">WORKS</a></li>
+                           <li><a href="#">SERVICES</a></li>
+                           <li><a href="#">ABOUT</a></li>
+                           <li><a href="#">CONTACT</a></li>
+                       </ul>
+                       
+                   </div>
+                   
+               </div>
+               
+               <div class="secondary-nav">
+                   
+                   <div class="logo">
+                       <img src="asset/images/limon_small.png" alt="">
+                   </div>
+               </div>
+               
+           </div>
+           
+       </header>
+       
+      <div id="banner">
+          <div class="wrap1">
+          <div class="full-video">
+              
+              <video src="asset/images/447220946.mp4" id="video_background" autoplay  width="100%" loop=infinite muted style="visibility: visible;"></video>
+          </div>
+          
+          <div class="clipped-video">
+              <div class="wrap">
+              <video src="asset/images/447220146%20(1).mp4" autoplay  loop=infinte  ></video>
+              </div>
+          </div>
+          
+          </div>
+      </div> 
+       
+       <footer>
+           
+           <div class="container">
+               
+               
+           </div>
+           
+       </footer>
+       
+   </div>
+   
+   
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   
+    <script>
+    
+      $(document).ready(function(){
+          $("#banner").mousemove(function (event){
+              
+              $(".clipped-video").css(
+              
+              "width",event.pageX
+              );
+          });
+      });
+        
+    </script>
+     
+<!--
+     <script>
+    var video = document.getElementsByTagName("video");
+video.addEventListener("canplay", function() {
+  setTimeout(function() {
+    video.play();
+  }, 5000);
+});
+    
+    </script>
+    
+-->
+     
+      
+</body>
+</html>
